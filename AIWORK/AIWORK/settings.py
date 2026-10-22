@@ -74,16 +74,16 @@ WSGI_APPLICATION = "AIWORK.wsgi.application"
 # https://docs.djangoproject.com/en/6.1/ref/settings/#databases
 
 DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'vdd',
-        'USER': 'admin',
-        'PASSWORD': 'TuPasswordDeRDS',
-        'HOST': 'startups-db.cxyz123.us-east-1.rds.amazonaws.com', # <- Endpoint de RDS
-        'PORT': '3306',
-        'OPTIONS': {
-            'init_command': "SET sql_mode='STRICT_TRANS_TABLES'",
-            'charset': 'utf8mb4',
+    "default": {
+        "ENGINE": "django.db.backends.mysql",
+        "NAME": "aiworkdb",
+        "USER": "admin",
+        "PASSWORD": "WORK4171", 
+        "HOST": "aiwork-db.cqsujejqibcg.us-east-1.rds.amazonaws.com",
+        "PORT": "3306",
+        "OPTIONS": {
+            "charset": "utf8mb4",
+            "init_command": "SET sql_mode='STRICT_TRANS_TABLES'",
         },
     }
 }
